@@ -67,7 +67,11 @@ class Exiter:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         prog='pidmem',
-        description='A program that logs memory usage of a running process id'
+        description=
+        """
+        A program that logs memory usage of a running process id.
+        To exit, just press Ctrl+C. The logs will be generated afterwards.
+        """
     )
     parser.add_argument('pid', type=int, help='Process ID')
     parser.add_argument('-d', '--delay', type=float, default=1, help='Delay between samples in seconds (can be a float value)')
